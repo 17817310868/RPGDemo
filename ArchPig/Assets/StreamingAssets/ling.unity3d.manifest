@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 3146562965
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7b6c3e5b9941693ddeb215a01c50c9cc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2dc798224d60ef888ddb633479349387
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/Ling/ling.prefab
+Dependencies: []

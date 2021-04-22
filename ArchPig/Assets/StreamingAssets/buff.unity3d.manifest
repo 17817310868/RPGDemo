@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2083823453
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5af8b5600c4e5a3f71a5a931bc9dd5cf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4ee24826024f357daa5f727674faef3b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/Buff/Buff.prefab
+Dependencies: []

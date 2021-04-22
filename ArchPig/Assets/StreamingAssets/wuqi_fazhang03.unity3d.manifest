@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2301072896
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 201e74b93bda90f76bea70d7e261b0a4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb5cff3a1350143ce413b676b0fb473f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/NvZhangModels/wuqi_fazhang03/wuqi_fazhang03.prefab
+Dependencies: []

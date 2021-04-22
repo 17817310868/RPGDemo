@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 996681736
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 72a9b37aa63d2cddc448ff31e804a1f8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/poisoning.png
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/hpReply.png
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/burn.png
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/physicalDefensePromote.png
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/magicDefensePromote.png
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/physicalAttackPromote.png
+- Assets/LuaFramework/AssetBundles/Textures/BuffIcon/magicAttackPromote.png
+Dependencies: []

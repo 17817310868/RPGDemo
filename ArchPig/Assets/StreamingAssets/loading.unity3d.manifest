@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1232516865
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2f83f46b6ae7cfc7b08ab54272f5bbb3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 96872c7ec92bd873a12bb006eade175a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/Loading/LoadingPanel.prefab
+Dependencies: []

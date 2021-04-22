@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 288804636
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2af8f4ce24f855cd81fb3cef07203c53
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nanShanTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nvGongFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nvZhangTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nanQiangFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nanJianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nvGongTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nanShanFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nanJianTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nanQiangTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/ProfessionIcon/nvZhangFalse.png
+Dependencies: []

@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0184: '"is" 表达式的给定表达式始终不是所提供的类型
+dotnet_diagnostic.CS0184.severity = none

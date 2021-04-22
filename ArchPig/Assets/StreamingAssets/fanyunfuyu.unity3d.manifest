@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2435767423
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9fe4556dcfd4be776d0821b2fbc029bf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8e7a9a5bc260fb3cb7f278e39396d550
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/FanYunFuYu/fanYunFuYu.prefab
+Dependencies: []

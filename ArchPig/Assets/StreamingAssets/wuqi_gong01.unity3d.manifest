@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 4008748019
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 48edcd55da0ab09068195f00fb1ec54d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cb5cff3a1350143ce413b676b0fb473f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/NvGongModels/wuqi_gong01/wuqi_gong01.prefab
+Dependencies: []

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3610409939
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 781b0e7694fe2d05dcbc00de9c4716f0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Audio/fanyunfuyu.mp3
+- Assets/LuaFramework/AssetBundles/Audio/attack.mp3
+- Assets/LuaFramework/AssetBundles/Audio/button.mp3
+- Assets/LuaFramework/AssetBundles/Audio/battle.mp3
+- Assets/LuaFramework/AssetBundles/Audio/fenghuoliantian.mp3
+- Assets/LuaFramework/AssetBundles/Audio/hengsaoqianjun.mp3
+- Assets/LuaFramework/AssetBundles/Audio/paishandaohai.mp3
+- Assets/LuaFramework/AssetBundles/Audio/toggle.mp3
+- Assets/LuaFramework/AssetBundles/Audio/taoyuanzhen.mp3
+- Assets/LuaFramework/AssetBundles/Audio/loginBgm.mp3
+Dependencies: []

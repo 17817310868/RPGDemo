@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 2384328622
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e81fb2c034bd680f19bcbbdc6179fcaf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/qxw.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/qiang4.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/qiang3.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/jian2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/gong1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/zhang1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/0jlb.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/qiang5.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/yaodai2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/10jlb.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/cff.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/shan1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/toukui1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/xianglian1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/yifu2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/gong2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/zzs.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/5wyb.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/yaodai1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/xianglian2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/experience.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/shan2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/yqw.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/qiang2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/yifu1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/qiang1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/bljt.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/xiezi2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/zhang2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/gms.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/jian1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/ljf.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/tys.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/dzf.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/xiezi1.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/toukui2.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/slz.png
+- Assets/LuaFramework/AssetBundles/Textures/ItemIcon/xyd.png
+Dependencies: []
