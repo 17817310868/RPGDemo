@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 740264308
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 61c5aacd9dc641679eb28830bd56d743
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/Task/keJie.png
+- Assets/LuaFramework/AssetBundles/Textures/Task/weiWanCheng.png
+- Assets/LuaFramework/AssetBundles/Textures/Task/yiWanCheng.png
+Dependencies: []

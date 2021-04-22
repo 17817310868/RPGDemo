@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 3429699998
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cbd93e8f9c98ceb0bad2262323e794d7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/schoolBg.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/youtianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/yangtianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/schoolInfoFirst.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/chengtianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/zhutianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/xuantianTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/zhutianTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/youtianTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/schoolInfoSecond.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/chengtianTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/luantianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/luantianTrue.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/xuantianFalse.png
+- Assets/LuaFramework/AssetBundles/Textures/SchoolIcon/yangtianTrue.png
+Dependencies: []

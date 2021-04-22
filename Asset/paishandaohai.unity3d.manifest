@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1723801990
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7cff3aa0d56f65c18b00643db8239691
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 969a72331f48c95269bbb0f5e0c64e42
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/PaiShanDaoHai/paiShanDaoHai.prefab
+Dependencies: []

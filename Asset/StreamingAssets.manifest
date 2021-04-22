@@ -1,0 +1,391 @@
+ManifestFileVersion: 0
+CRC: 3569212819
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: login.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: loginbg.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: register.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: mask.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: nanqiang.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: nanjian.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: nvgong.unity3d
+      Dependencies: {}
+    Info_7:
+      Name: nanshan.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: nvzhang.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: createrole.unity3d
+      Dependencies:
+        Dependency_0: professionicon.unity3d
+        Dependency_1: schoolicon.unity3d
+    Info_10:
+      Name: professionicon.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: wuqi_qiang01.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: wuqi_jian01.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: wuqi_gong01.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: wuqi_shan01.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: wuqi_fazhang01.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: wuqi_qiang02.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: wuqi_jian02.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: wuqi_gong02.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: wuqi_shan02.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: wuqi_fazhang02.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: wuqi_qiang03.unity3d
+      Dependencies: {}
+    Info_22:
+      Name: wuqi_jian03.unity3d
+      Dependencies: {}
+    Info_23:
+      Name: wuqi_gong03.unity3d
+      Dependencies: {}
+    Info_24:
+      Name: wuqi_shan03.unity3d
+      Dependencies: {}
+    Info_25:
+      Name: wuqi_fazhang03.unity3d
+      Dependencies: {}
+    Info_26:
+      Name: wuqi_qiang04.unity3d
+      Dependencies: {}
+    Info_27:
+      Name: wuqi_jian04.unity3d
+      Dependencies: {}
+    Info_28:
+      Name: wuqi_gong04.unity3d
+      Dependencies: {}
+    Info_29:
+      Name: wuqi_shan04.unity3d
+      Dependencies: {}
+    Info_30:
+      Name: wuqi_fazhang04.unity3d
+      Dependencies: {}
+    Info_31:
+      Name: wuqi_qiang05.unity3d
+      Dependencies: {}
+    Info_32:
+      Name: wuqi_jian05.unity3d
+      Dependencies: {}
+    Info_33:
+      Name: wuqi_gong05.unity3d
+      Dependencies: {}
+    Info_34:
+      Name: lua/lua_cjson.unity3d
+      Dependencies: {}
+    Info_35:
+      Name: lua/lua_common.unity3d
+      Dependencies: {}
+    Info_36:
+      Name: lua/lua_config.unity3d
+      Dependencies: {}
+    Info_37:
+      Name: lua/lua_controller.unity3d
+      Dependencies: {}
+    Info_38:
+      Name: lua/lua_enum.unity3d
+      Dependencies: {}
+    Info_39:
+      Name: lua/lua_jit.unity3d
+      Dependencies: {}
+    Info_40:
+      Name: lua/lua_logic.unity3d
+      Dependencies: {}
+    Info_41:
+      Name: lua/lua_lpeg.unity3d
+      Dependencies: {}
+    Info_42:
+      Name: lua/lua_misc.unity3d
+      Dependencies: {}
+    Info_43:
+      Name: lua/lua_model.unity3d
+      Dependencies: {}
+    Info_44:
+      Name: lua/lua_protobuf.unity3d
+      Dependencies: {}
+    Info_45:
+      Name: lua/lua_socket.unity3d
+      Dependencies: {}
+    Info_46:
+      Name: lua/lua_system.unity3d
+      Dependencies: {}
+    Info_47:
+      Name: lua/lua_tools.unity3d
+      Dependencies: {}
+    Info_48:
+      Name: lua/lua_unityengine.unity3d
+      Dependencies: {}
+    Info_49:
+      Name: lua/lua_view.unity3d
+      Dependencies: {}
+    Info_50:
+      Name: lua/lua_3rd_cjson.unity3d
+      Dependencies: {}
+    Info_51:
+      Name: lua/lua_3rd_luabitop.unity3d
+      Dependencies: {}
+    Info_52:
+      Name: lua/lua_3rd_pbc.unity3d
+      Dependencies: {}
+    Info_53:
+      Name: lua/lua_3rd_pblua.unity3d
+      Dependencies: {}
+    Info_54:
+      Name: lua/lua_3rd_sproto.unity3d
+      Dependencies: {}
+    Info_55:
+      Name: lua/lua_system_injection.unity3d
+      Dependencies: {}
+    Info_56:
+      Name: lua/lua_system_reflection.unity3d
+      Dependencies: {}
+    Info_57:
+      Name: lua/lua.unity3d
+      Dependencies: {}
+    Info_58:
+      Name: camera.unity3d
+      Dependencies: {}
+    Info_59:
+      Name: schoolicon.unity3d
+      Dependencies: {}
+    Info_60:
+      Name: tipmask.unity3d
+      Dependencies: {}
+    Info_61:
+      Name: zhanchi.unity3d
+      Dependencies: {}
+    Info_62:
+      Name: kunwu.unity3d
+      Dependencies: {}
+    Info_63:
+      Name: ling.unity3d
+      Dependencies: {}
+    Info_64:
+      Name: taskicon.unity3d
+      Dependencies: {}
+    Info_65:
+      Name: wuqi_shan05.unity3d
+      Dependencies: {}
+    Info_66:
+      Name: wuqi_fazhang05.unity3d
+      Dependencies: {}
+    Info_67:
+      Name: mainui.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_68:
+      Name: roleicon.unity3d
+      Dependencies: {}
+    Info_69:
+      Name: bag.unity3d
+      Dependencies:
+        Dependency_0: schoolicon.unity3d
+        Dependency_1: othericon.unity3d
+    Info_70:
+      Name: othericon.unity3d
+      Dependencies: {}
+    Info_71:
+      Name: role.unity3d
+      Dependencies:
+        Dependency_0: schoolicon.unity3d
+    Info_72:
+      Name: item.unity3d
+      Dependencies:
+        Dependency_0: roleicon.unity3d
+        Dependency_1: itembg.unity3d
+    Info_73:
+      Name: itembg.unity3d
+      Dependencies: {}
+    Info_74:
+      Name: itemicon.unity3d
+      Dependencies: {}
+    Info_75:
+      Name: iteminfo.unity3d
+      Dependencies:
+        Dependency_0: itembg.unity3d
+        Dependency_1: itemicon.unity3d
+    Info_76:
+      Name: skill.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_77:
+      Name: skillicon.unity3d
+      Dependencies: {}
+    Info_78:
+      Name: eachotherrole.unity3d
+      Dependencies:
+        Dependency_0: roleicon.unity3d
+    Info_79:
+      Name: message.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_80:
+      Name: battle.unity3d
+      Dependencies: {}
+    Info_81:
+      Name: headmgr.unity3d
+      Dependencies: {}
+    Info_82:
+      Name: head.unity3d
+      Dependencies:
+        Dependency_0: taskicon.unity3d
+    Info_83:
+      Name: attackeffect.unity3d
+      Dependencies: {}
+    Info_84:
+      Name: paishandaohai.unity3d
+      Dependencies: {}
+    Info_85:
+      Name: hengsaoqianjun.unity3d
+      Dependencies: {}
+    Info_86:
+      Name: fanyunfuyu.unity3d
+      Dependencies: {}
+    Info_87:
+      Name: fenghuoliantian.unity3d
+      Dependencies: {}
+    Info_88:
+      Name: hurt.unity3d
+      Dependencies: {}
+    Info_89:
+      Name: buff.unity3d
+      Dependencies: {}
+    Info_90:
+      Name: bufficon.unity3d
+      Dependencies: {}
+    Info_91:
+      Name: buffinfo.unity3d
+      Dependencies:
+        Dependency_0: bufficon.unity3d
+    Info_92:
+      Name: member.unity3d
+      Dependencies:
+        Dependency_0: roleicon.unity3d
+        Dependency_1: itembg.unity3d
+    Info_93:
+      Name: shop.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_94:
+      Name: commodity.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+        Dependency_1: itembg.unity3d
+        Dependency_2: itemicon.unity3d
+    Info_95:
+      Name: forge.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+        Dependency_1: itembg.unity3d
+        Dependency_2: itemicon.unity3d
+    Info_96:
+      Name: equip.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+        Dependency_1: itembg.unity3d
+        Dependency_2: itemicon.unity3d
+    Info_97:
+      Name: gem.unity3d
+      Dependencies:
+        Dependency_0: itembg.unity3d
+        Dependency_1: itemicon.unity3d
+    Info_98:
+      Name: makebook.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+        Dependency_1: itembg.unity3d
+        Dependency_2: itemicon.unity3d
+    Info_99:
+      Name: material.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+        Dependency_1: itembg.unity3d
+        Dependency_2: itemicon.unity3d
+    Info_100:
+      Name: talk.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_101:
+      Name: tasktitle.unity3d
+      Dependencies:
+        Dependency_0: taskicon.unity3d
+    Info_102:
+      Name: goods.unity3d
+      Dependencies: {}
+    Info_103:
+      Name: taskbox.unity3d
+      Dependencies: {}
+    Info_104:
+      Name: rank.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_105:
+      Name: rolelevelrank.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_106:
+      Name: rolepowerrank.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_107:
+      Name: mail.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_108:
+      Name: mailbox.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_109:
+      Name: auction.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+    Info_110:
+      Name: auctionbox.unity3d
+      Dependencies:
+        Dependency_0: othericon.unity3d
+        Dependency_1: itemicon.unity3d
+    Info_111:
+      Name: loading.unity3d
+      Dependencies: {}
+    Info_112:
+      Name: setting.unity3d
+      Dependencies: {}
+    Info_113:
+      Name: audio.unity3d
+      Dependencies: {}

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3023034565
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 696f298a219459ff3b68fe2f50f99916
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Lua/Model/Item.lua.bytes
+- Assets/Lua/Model/RoleInfoMgr.lua.bytes
+- Assets/Lua/Model/InventoryMgr.lua.bytes
+- Assets/Lua/Model/TaskManager.lua.bytes
+- Assets/Lua/Model/UIMgr.lua.bytes
+- Assets/Lua/Model/SkillMgr.lua.bytes
+- Assets/Lua/Model/ClientMgr.lua.bytes
+Dependencies: []

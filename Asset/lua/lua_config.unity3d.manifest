@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3469462710
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8401fdbad7b779ce7b60c9849909ac00
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Lua/Config/ProfessionConfig.lua.bytes
+- Assets/Lua/Config/FormulaConfig.lua.bytes
+- Assets/Lua/Config/SchoolConfig.lua.bytes
+- Assets/Lua/Config/TalkConfig.lua.bytes
+- Assets/Lua/Config/SkillConfig.lua.bytes
+- Assets/Lua/Config/NPCConfig.lua.bytes
+- Assets/Lua/Config/ItemConfig.lua.bytes
+- Assets/Lua/Config/AttrConfig.lua.bytes
+- Assets/Lua/Config/EquipConfig.lua.bytes
+- Assets/Lua/Config/TaskConfig.lua.bytes
+- Assets/Lua/Config/ExperienceConfig.lua.bytes
+- Assets/Lua/Config/BuffConfig.lua.bytes
+- Assets/Lua/Config/GemConfig.lua.bytes
+Dependencies: []

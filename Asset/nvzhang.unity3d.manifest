@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 3332944674
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4d8237ea9ab8b91641a6aaa6941700dc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a5df079a0f210601557c9632fd58265a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Prefabs/NvZhangModels/NvZhang/NvZhang.prefab
+Dependencies: []

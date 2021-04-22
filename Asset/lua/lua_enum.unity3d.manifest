@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 408799139
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cf6d36a81e7fedb66bd804bb21107127
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Lua/Enum/SchoolEnum.lua.bytes
+- Assets/Lua/Enum/RankEnum.lua.bytes
+- Assets/Lua/Enum/InventoryEnum.lua.bytes
+- Assets/Lua/Enum/MaskEnum.lua.bytes
+- Assets/Lua/Enum/RoleEnum.lua.bytes
+- Assets/Lua/Enum/MessageEnum.lua.bytes
+- Assets/Lua/Enum/EquipAttrEnum.lua.bytes
+- Assets/Lua/Enum/AuctionSortEnum.lua.bytes
+- Assets/Lua/Enum/ItemEnum.lua.bytes
+- Assets/Lua/Enum/ProfessionEnum.lua.bytes
+- Assets/Lua/Enum/TaskEnum.lua.bytes
+- Assets/Lua/Enum/ModelEnum.lua.bytes
+- Assets/Lua/Enum/NPCEnum.lua.bytes
+- Assets/Lua/Enum/ForgeEnum.lua.bytes
+- Assets/Lua/Enum/ActionType.lua.bytes
+- Assets/Lua/Enum/UILayerEnum.lua.bytes
+- Assets/Lua/Enum/CtrlEnum.lua.bytes
+- Assets/Lua/Enum/ViewEnum.lua.bytes
+- Assets/Lua/Enum/EventTriggerEnum.lua.bytes
+Dependencies: []

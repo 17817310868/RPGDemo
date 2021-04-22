@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 512441145
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae74d8032bb1378a00740e2fe1e996ab
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/gold.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/normal.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/hight.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/mailNormal.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/btn2Normal.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/chooseState.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/mailHighlighted.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/btnNormal.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/gemBg.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/highlighted.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/normalState.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/btnHighlighted.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/gemNormal.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/nor.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/gemChoose.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/down.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/up.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/silver.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/hole.png
+- Assets/LuaFramework/AssetBundles/Textures/OtherIcon/btn2Highlighted.png
+Dependencies: []

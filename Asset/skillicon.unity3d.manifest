@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 3056949662
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a7fc2ebbdda9cfc20207cb987247e9cc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/mtjy.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/hsqj.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/ssjh.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/fyfy.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/hdwl.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/frdl.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/jqzh.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/wzlx.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/mtfy.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/hxls.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/hx.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/qdtl.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/bbsl.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/mwj.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/wsrj.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/wzjn.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/wwdz.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/fhlt.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/axsy.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/kmfc.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/tttb.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/cs.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/fcdc.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/ddsy.png
+- Assets/LuaFramework/AssetBundles/Textures/SkillIcon/psdh.png
+Dependencies: []

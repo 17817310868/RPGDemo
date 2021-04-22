@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2005595635
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 87e1b5265b69e1e511e6941d383c5e7b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Lua/View/ShopPanel.lua.bytes
+- Assets/Lua/View/ForgePanel.lua.bytes
+- Assets/Lua/View/EachOtherRolePanel.lua.bytes
+- Assets/Lua/View/HeadMgrPanel.lua.bytes
+- Assets/Lua/View/RankPanel.lua.bytes
+- Assets/Lua/View/LoginPanel.lua.bytes
+- Assets/Lua/View/AuctionPanel.lua.bytes
+- Assets/Lua/View/LoadingPanel.lua.bytes
+- Assets/Lua/View/BagPanel.lua.bytes
+- Assets/Lua/View/TalkPanel.lua.bytes
+- Assets/Lua/View/BuffInfoPanel.lua.bytes
+- Assets/Lua/View/BattlePanel.lua.bytes
+- Assets/Lua/View/LoginBgPanel.lua.bytes
+- Assets/Lua/View/MessagePanel.lua.bytes
+- Assets/Lua/View/RegisterPanel.lua.bytes
+- Assets/Lua/View/MailPanel.lua.bytes
+- Assets/Lua/View/SkillPanel.lua.bytes
+- Assets/Lua/View/SettingPanel.lua.bytes
+- Assets/Lua/View/ItemInfoPanel.lua.bytes
+- Assets/Lua/View/RolePanel.lua.bytes
+- Assets/Lua/View/CreateRolePanel.lua.bytes
+- Assets/Lua/View/MainUIPanel.lua.bytes
+Dependencies: []

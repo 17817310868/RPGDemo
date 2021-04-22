@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 625334921
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17f21baa1ca9c0779444077f51e1565a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/Lua/Controller/HeadMgrCtrl.lua.bytes
+- Assets/Lua/Controller/RankCtrl.lua.bytes
+- Assets/Lua/Controller/MainUICtrl.lua.bytes
+- Assets/Lua/Controller/BagCtrl.lua.bytes
+- Assets/Lua/Controller/BuffInfoCtrl.lua.bytes
+- Assets/Lua/Controller/LoginCtrl.lua.bytes
+- Assets/Lua/Controller/ItemInfoCtrl.lua.bytes
+- Assets/Lua/Controller/TaskCtrl.lua.bytes
+- Assets/Lua/Controller/MessageCtrl.lua.bytes
+- Assets/Lua/Controller/ShopCtrl.lua.bytes
+- Assets/Lua/Controller/LoginBgCtrl.lua.bytes
+- Assets/Lua/Controller/AuctionCtrl.lua.bytes
+- Assets/Lua/Controller/RoleCtrl.lua.bytes
+- Assets/Lua/Controller/BattleCtrl.lua.bytes
+- Assets/Lua/Controller/EachOtherRoleCtrl.lua.bytes
+- Assets/Lua/Controller/CreateRoleCtrl.lua.bytes
+- Assets/Lua/Controller/SkillCtrl.lua.bytes
+- Assets/Lua/Controller/MailCtrl.lua.bytes
+- Assets/Lua/Controller/RegisterCtrl.lua.bytes
+- Assets/Lua/Controller/ForgeCtrl.lua.bytes
+- Assets/Lua/Controller/TalkCtrl.lua.bytes
+Dependencies: []
