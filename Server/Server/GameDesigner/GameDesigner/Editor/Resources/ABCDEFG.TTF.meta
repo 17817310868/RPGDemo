@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 62a060007eae1704f8bb3e286f78ef5d
+timeCreated: 1507711577
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 12
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Vijaya
+  fontNames:
+  - Vijaya
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

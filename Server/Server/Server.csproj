@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B357AC8-7487-4496-A766-2C13F53C039F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crc32C.NET, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Crc32C.NET.1.0.5.0\lib\net20\Crc32C.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="DnsClient, Version=1.3.1.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.3.1\lib\net471\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\..\拱猪\Assets\ExcelTools\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\拱猪\Assets\ExcelTools\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.10.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.10.3\lib\net452\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.10.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.10.3\lib\net452\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.10.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.10.3\lib\net452\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Libmongocrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Libmongocrypt.1.0.0\lib\net452\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>GameDesigner\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>GameDesigner\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.23.0\lib\net45\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="Snappy.NET, Version=1.1.1.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Snappy.NET.1.1.1.8\lib\net45\Snappy.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.14f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.14f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buff\BuffInfo.cs" />
+    <Compile Include="ConfigTool\ConfigClass.cs" />
+    <Compile Include="ConfigTool\ExcelTool.cs" />
+    <Compile Include="Data\Data.cs" />
+    <Compile Include="Data\DBSys.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Blueprint.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\BlueprintEditorManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\BlueprintManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\BlueprintNode.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Constructor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\ArrayUtility.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\Branch.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\Enum\OperatorEnum.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\ForeachLoop.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\ForLoop.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Array.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Byte.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Double.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Float.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Int16.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Int32.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Int64.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Object.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\SByte.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\String.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\UInt16.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\UInt32.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\UInt64.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\NullUtility.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\Operator.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\Try.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Control\WhileLoop.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\ConvertUtility.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\CreateUtility.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Field.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\FunBlockNode.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Method.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\NodeRun.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\NodeStart.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\ObjectModel.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Parameter.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\Property.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\SystemType.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\TypeInfo.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Blueprint\ValueType.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\AddBlueprintNode.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\BlueprintEditor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\BlueprintEditorTools.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\BlueprintGUILayout.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\BlueprintManagerEditor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\BlueprintOutputCode.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\BlueprintSetting.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\GraphEditor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\LuaComponentEdit.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\LuaEditor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\NodeEdit.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\PluginSettings.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\ScriptTools.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\StateBehaviourInspector.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\StateMachineEditor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\StateMachineSetting.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\StateMachineWindow.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\StateManagerEditor.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Editor\TransitionInspector.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Lua\LuaComponent.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Lua\LuaManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\FrameSync.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\NetBehaviour.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\NetClientBase.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\NetEvent.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\NetTransform.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\NetworkCondition.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\TcpClient.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Client\UdpClient.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Client\NetworkTransform.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Client\SceneManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Clone.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Command.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\DataBaseEntity.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\Dictionary.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\ExceptionArgument.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\ExceptionResource.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\HashHelpers.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\IWellKnownStringEqualityComparer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\RandomizedObjectEqualityComparer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\ThrowHelper.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\FrameEntity.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\GameManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\ObjectEntity.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\Operation.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\OperationList.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\PlayerEntity.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\SceneManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\SendManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\ServerEntity.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\SQL.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Entity\TimeManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\EventSystem\IEntityComponent.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\EventSystem\IUpdateHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\FrameData.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\FrameSync.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\MainServer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\NetBehaviour.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\NetPlayer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\NetPort.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\NetScene.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\NetServerBase.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\ServerDataBase.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\TcpServer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\TcpServerBase.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\TcpServerIOCP.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Server\UdpServer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\ConnectState.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\IDebugHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\INetClient.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\INetConvert.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\INetworkHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\INetworkSceneHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\ISendHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\IServerEventHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\IServerHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\IServerSendHandle.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetCmd.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetConvert.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetConvertBase.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetConvertBinary.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetConvertOld.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetDelegate.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetState.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetSystem.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\NetworkDataTraffic.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\Random.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\ReceiveBuffer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\RevdBuffer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\RevdRTBuffer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\RPCFun.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Share\SendBuffer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\System\GDFramework.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\System\NComponent.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\System\NGameObject.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\System\NObject.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\System\NScene.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\System\NTransform.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Color.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Color32.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Mathf.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Matrix3x3.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Matrix4Utils.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Matrix4x4.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Quaternion.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Rect.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Vector2.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Vector3.cs" />
+    <Compile Include="GameDesigner\GameDesigner\Net\Unity\Vector4.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\ActionBehaviour.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\AudioManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\IBehaviour.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\IState.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\State.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\StateAction.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\StateBehaviour.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\StateMachine.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\StateManager.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\StateSystem.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\Timer.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\Transition.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\TransitionBehaviour.cs" />
+    <Compile Include="GameDesigner\GameDesigner\StateMachine\TransitionModel.cs" />
+    <Compile Include="GameSys\AttrSys.cs" />
+    <Compile Include="GameSys\AuctionSys.cs" />
+    <Compile Include="GameSys\BattleSys.cs" />
+    <Compile Include="GameSys\BuffSys.cs" />
+    <Compile Include="GameSys\ConfigSys.cs" />
+    <Compile Include="GameSys\CtrlSys.cs" />
+    <Compile Include="GameSys\EventSys.cs" />
+    <Compile Include="GameSys\ForgeSys.cs" />
+    <Compile Include="GameSys\InventorySys.cs" />
+    <Compile Include="GameSys\ItemSys.cs" />
+    <Compile Include="GameSys\LoginSys.cs" />
+    <Compile Include="GameSys\MailSys.cs" />
+    <Compile Include="GameSys\RankingSys.cs" />
+    <Compile Include="GameSys\SignSys.cs" />
+    <Compile Include="GameSys\SkillInfoSys.cs" />
+    <Compile Include="GameSys\SkillSys.cs" />
+    <Compile Include="GameSys\TaskSys.cs" />
+    <Compile Include="GameSys\TeamSys.cs" />
+    <Compile Include="GameSys\Tools.cs" />
+    <Compile Include="Item\EquipInfo.cs" />
+    <Compile Include="Item\ItemBase.cs" />
+    <Compile Include="Item\ItemInfo.cs" />
+    <Compile Include="Main\MainServer.cs" />
+    <Compile Include="Role\MainRole.cs" />
+    <Compile Include="Role\PartnerRole.cs" />
+    <Compile Include="Role\PetRole.cs" />
+    <Compile Include="Role\RoleBase.cs" />
+    <Compile Include="GameSys\RoleSys.cs" />
+    <Compile Include="MessageModel\MessageModel.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="Main\ServerSys.cs" />
+    <Compile Include="Skill\SkillAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="GameDesigner\GameDesigner\Blueprint.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Blueprint.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\BlueprintEditorManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\BlueprintManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\BlueprintNode.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Constructor.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\ArrayUtility.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\Branch.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\Enum.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\Enum\OperatorEnum.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\ForeachLoop.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\ForLoop.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Array.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Byte.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Double.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Float.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Int16.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Int32.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Int64.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\Object.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\SByte.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\String.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\UInt16.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\UInt32.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\MathOperators\UInt64.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\NullUtility.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\Operator.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\Try.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Control\WhileLoop.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\ConvertUtility.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\CreateUtility.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Field.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\FunBlockNode.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Method.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\NodeRun.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\NodeStart.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\ObjectModel.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Parameter.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\Property.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\SystemType.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\TypeInfo.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Blueprint\ValueType.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\chm.rar" />
+    <None Include="GameDesigner\GameDesigner\chm.rar.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\AddBlueprintNode.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\BlueprintEditor.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\BlueprintEditorTools.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\BlueprintGUILayout.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\BlueprintManagerEditor.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\BlueprintOutputCode.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\BlueprintSetting.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\GraphEditor.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\NodeEdit.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\PluginSettings.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\11000503.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\11000826.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\1234567890.TTF" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\1234567890.TTF.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\1466603769212801.jpg.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\55m58PICE49_1024.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\6631355837747161596.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ABCDEFG.TTF" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ABCDEFG.TTF.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ActionBehaviourScript.script" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ActionBehaviourScript.script.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ai.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\BlueprintSetting.asset" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\BlueprintSetting.asset.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\BlueprintSetting.prefab" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\BlueprintSetting.prefab.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ChiNa.asset" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ChiNa.asset.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ChiNa.TTF" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ChiNa.TTF.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ChineseLanguage.language" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\ChineseLanguage.language.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\EnglishLanguage.language" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\EnglishLanguage.language.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\Foldout_BG.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\GridLine.shader" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\GridLine.shader.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\Icon_Csh.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\InfoWindow.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\new_Add.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\RadioButton_Off.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\SeqNode.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\server_list_bg.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\server_list_bg1.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\state.jpg.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\StateBehaviourScript.script" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\StateBehaviourScript.script.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\StateMachineSetting.asset" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\StateMachineSetting.asset.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\StateMachineSetting.prefab" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\StateMachineSetting.prefab.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\stateStyle.png.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\TransitionBehaviorScript.script" />
+    <None Include="GameDesigner\GameDesigner\Editor\Resources\TransitionBehaviorScript.script.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\ScriptTools.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\StateBehaviourInspector.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\StateMachineEditor.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\StateMachineSetting.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\StateMachineWindow.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\StateManagerEditor.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Editor\TransitionInspector.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\GameDesignerHelp.chm" />
+    <None Include="GameDesigner\GameDesigner\GameDesignerHelp.chm.meta" />
+    <None Include="GameDesigner\GameDesigner\Lua.meta" />
+    <None Include="GameDesigner\GameDesigner\Lua\LuaComponent.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\FrameSync.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\NetBehaviour.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\NetClientBase.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\NetEvent.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\NetTransform.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\NetworkCondition.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\TcpClient.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Client\UdpClient.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Client.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Client\NetworkTransform.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Client\SceneManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Clone.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Command.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\DataBaseEntity.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\Dictionary.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\ExceptionArgument.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\ExceptionResource.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\HashHelpers.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\IWellKnownStringEqualityComparer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\RandomizedObjectEqualityComparer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Dictionary\ThrowHelper.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\FrameEntity.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\GameManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\ObjectEntity.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\Operation.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\OperationList.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\PlayerEntity.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\SceneManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\SendManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\ServerEntity.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\SQL.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Entity\TimeManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\EventSystem.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\EventSystem\IEntityComponent.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\EventSystem\IUpdateHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\FrameData.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\FrameSync.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\MainServer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\NetBehaviour.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\NetPlayer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\NetPort.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\NetScene.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\NetServerBase.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\ServerDataBase.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\TcpServer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\TcpServerBase.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\TcpServerIOCP.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Server\UdpServer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\ConnectState.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\IDebugHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\INetClient.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\INetConvert.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\INetworkHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\INetworkSceneHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\ISendHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\IServerEventHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\IServerHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\IServerSendHandle.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetCmd.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetConvert.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetConvertBase.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetConvertBinary.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetConvertOld.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetDelegate.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetState.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetSystem.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\NetworkDataTraffic.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\Random.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\ReceiveBuffer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\RevdBuffer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\RevdRTBuffer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\RPCFun.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Share\SendBuffer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System\GDFramework.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System\NComponent.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System\NGameObject.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System\NObject.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System\NScene.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\System\NTransform.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Color.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Color32.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Mathf.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Matrix3x3.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Matrix4Utils.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Matrix4x4.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Quaternion.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Rect.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Vector2.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Vector3.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Net\Unity\Vector4.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\Newtonsoft.Json.dll.mdb.meta" />
+    <None Include="GameDesigner\GameDesigner\Newtonsoft.Json.dll.meta" />
+    <None Include="GameDesigner\GameDesigner\Newtonsoft.Json.xml.meta" />
+    <None Include="GameDesigner\GameDesigner\protobuf-net.dll.meta" />
+    <None Include="GameDesigner\GameDesigner\protobuf-net.xml.meta" />
+    <None Include="GameDesigner\GameDesigner\SIMKAI.TTF" />
+    <None Include="GameDesigner\GameDesigner\SIMKAI.TTF.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\ActionBehaviour.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\AudioManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\IBehaviour.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\IState.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\State.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\StateAction.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\StateBehaviour.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\StateMachine.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\StateManager.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\StateSystem.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\Timer.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\Transition.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\TransitionBehaviour.cs.meta" />
+    <None Include="GameDesigner\GameDesigner\StateMachine\TransitionModel.cs.meta" />
+    <None Include="MessageModel\MessageModel.cs.meta" />
+    <None Include="packages.config" />
+    <None Include="Xlsx\BuffConfig.xlsx" />
+    <None Include="Xlsx\EquipConfig.xlsx" />
+    <None Include="Xlsx\ExperienceConfig.xlsx" />
+    <None Include="Xlsx\FormulaConfig.xlsx" />
+    <None Include="Xlsx\GemConfig.xlsx" />
+    <None Include="Xlsx\ItemConfig.xlsx" />
+    <None Include="Xlsx\MonsterConfig.xlsx" />
+    <None Include="Xlsx\ProfessionConfig.xlsx" />
+    <None Include="Xlsx\SchoolConfig.xlsx" />
+    <None Include="Xlsx\SkillConfig.xlsx" />
+    <None Include="Xlsx\TaskConfig.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\11000503.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\11000826.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\1466603769212801.jpg" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\55m58PICE49_1024.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\6631355837747161596.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\ai.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\Foldout_BG.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\Icon_Csh.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\InfoWindow.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\new_Add.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\RadioButton_Off.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\SeqNode.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\server_list_bg.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\server_list_bg1.png" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\state.jpg" />
+    <Content Include="GameDesigner\GameDesigner\Editor\Resources\stateStyle.png" />
+    <Content Include="GameDesigner\GameDesigner\Newtonsoft.Json.dll" />
+    <Content Include="GameDesigner\GameDesigner\Newtonsoft.Json.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GameDesigner\GameDesigner\Newtonsoft.Json.xml" />
+    <Content Include="GameDesigner\GameDesigner\protobuf-net.dll" />
+    <Content Include="GameDesigner\GameDesigner\protobuf-net.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConfigTable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets'))" />
+  </Target>
+</Project>
